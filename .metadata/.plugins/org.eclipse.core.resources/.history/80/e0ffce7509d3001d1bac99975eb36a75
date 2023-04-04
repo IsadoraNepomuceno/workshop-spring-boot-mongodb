@@ -1,0 +1,5 @@
+package com.isadoranepomuceno.workshopmongo.domain;
+
+public class User {
+
+}
