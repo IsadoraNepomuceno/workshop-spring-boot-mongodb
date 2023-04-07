@@ -1,0 +1,11 @@
+package com.isadoranepomuceno.workshopmongo.dto;
+
+public class AuthoDTO {
+	
+	private String id;
+	private Struing name;
+	
+	public AuthorDTO(){
+	}
+
+}
