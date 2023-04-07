@@ -1,0 +1,24 @@
+package com.isadoranepomuceno.workshopmongo.config;
+
+import java.util.Arrays;
+
+import org.springframework.boot.CommandLineRunner;
+
+import com.isadoranepomuceno.workshopmongo.domain.User;
+import com.isadoranepomuceno.workshopmongo.repository.UserRepository;
+
+public class Instantiation implements CommandLineRunner{
+
+	@Override
+	public void run(String... args) throws Exception {
+		
+		User maria = new User(null, "Maria Brown", "maria@gmail.com");
+		User alex = new User(null, "Alex Green", "alex@gmail.com");
+		User bob = new User(null, "Bob Grey", "bob@gmail.com");
+		
+		UserRepository userRepository;
+		userRepository.saveAll(Arrays.asList(maria, alex, bob));
+		
+	}
+
+}
